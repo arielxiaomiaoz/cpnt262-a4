@@ -51,8 +51,8 @@ app.get('/api/v0/gallery', (req, res) => {
 });
 
 // Do something with form data
-app.post('/users', function(req, res) {
-  response.send(`<p>Thanks, ${req.body.name}! We'll send newsletter updates to ${req.body.email}.</p >`);
+app.post('/users', function(request, response) {
+  response.send(`<p>Thanks, ${request.body.name}! We'll send newsletter updates to ${request.body.email}.</p >`);
 });
 
 // Add more middleware
