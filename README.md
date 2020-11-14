@@ -7,8 +7,8 @@ Ariel Xiaomiao Zhang
 ## Assignment name:
 Assignment 4 - Express Gallery Website
 ## Github repo:
-[GH Repo]()<br>
-[Heroku Page]()
+[GH Repo](https://github.com/arielxiaomiaoz/cpnt262-a4)<br>
+[Heroku Page](https://cpnt262-a4-ariel.herokuapp.com/)
 ## Comments:
 Create a three pages website, Fetch a list of gallery items using `fetch()`.<br>
 Serve a JSON GET /gallery endpoint using `app.get()` and a custom module.<br>
