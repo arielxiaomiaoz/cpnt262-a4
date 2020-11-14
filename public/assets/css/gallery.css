@@ -1,0 +1,46 @@
+*{
+  box-sizing: border-box;
+  /* reset */
+}
+
+.gallery{
+  max-width: 1280px;
+  /* limit the max width of the gallery */
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(355px, 1fr));  
+  /* layout the images responsively */
+
+  justify-items: center;
+  /* centering the gallery on the page */
+  margin: auto;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 353px;
+  height: 370px;
+  /* preserve the aspect ratio of each image */
+
+  border: solid 0.1rem black;
+}
+
+.card img{
+  height: 233px;
+  object-fit: cover;
+  min-width: 100%;
+  /* Preserve aspect ratio */
+  object-fit: cover;
+  /* Round top corners */
+}
+
+/* making it pretty */
+.card figcaption{
+  font-family: "Gill Sans", sans-serif;
+}
+
+

@@ -1,0 +1,196 @@
+/* logo and nav */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.nav{
+  position: absolute;
+  right:5px;
+  top:5px; 
+  
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  gap: 1.5rem;
+
+  font-family: 'Lobster', cursive;
+  font-size: 1.5rem;
+
+  padding-right: 1rem;
+}
+
+.nav a{
+  color: rgb(255, 123, 0);
+  text-decoration:none;
+}
+
+.nav a:active{
+  color: hsl(56, 89%, 76%);
+}
+
+.nav a:hover{
+  background-color:#85eaee7e;
+}
+
+.nav .current {
+  background-color: hsla(0, 13%, 86%, 0.486);
+}
+
+.nav button{
+  font-size: 1rem;
+  font-family: Optima, sans-serif;
+  background-color:rgba(245, 206, 183, 0.993);
+  border: solid 0.1rem rgba(245, 206, 183, 0.993);
+  border-radius: 10%;
+  outline: none;
+}
+
+.nav button:hover{
+  color: rgb(255, 123, 0);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  /* shadow from https://www.w3schools.com/css/css3_buttons.asp */
+}
+
+.wrapper{
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+
+.footer{
+  text-align: center;
+}
+
+.footer,
+.push {
+  height: 50px;
+}
+
+/* make the nav and logo looks good on mobile*/
+@media (max-width: 600px) {
+  .nav{
+    margin-top: 4rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* hero */
+.header{
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../../images/background.jpg);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.header h1{
+  font-size: 6rem;
+  color: rgb(250, 246, 246);
+  font-family: 'Lobster', cursive;
+}
+
+.header p{
+  font-size: 2rem;
+  font-family: 'Lobster', cursive;
+  color: rgb(255, 123, 0);
+}
+
+.logo{
+  position: absolute;;
+  left:8px;
+  top:8px; 
+}
+
+.logo img{
+  width: 20rem;
+}
+
+/* main page */
+.content{
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 1rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.5rem;
+  /* sticky footer */
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+
+/* subscribe */
+.signup{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+
+  width: 30vw;
+  height: 50vh;
+
+  border: solid rgb(160, 160, 240) 1rem;
+  background-color: rgb(160, 160, 240);
+
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.singup h1{
+  font-family: 'Lobster', cursive;
+  font-size: 3rem;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+.textfield p input{
+  display: inline-block;
+  width: 20ch;
+}
+
+.textfield p label{
+  display: inline-block;
+
+  width: 9rem;
+
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.5rem;
+}
+
+abbr{
+  color: red;
+}
+
+form button{
+  font-size: 1.2rem;
+  font-family: Optima, sans-serif;
+  
+  margin-left: 5rem;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+
+form button:hover{
+  color: rgb(255, 123, 0);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  /* shadow from https://www.w3schools.com/css/css3_buttons.asp */
+}
+
+@media (max-width: 600px) {
+  .signup{
+    width: 18rem;
+    margin-left: 1rem;
+  }
+}
